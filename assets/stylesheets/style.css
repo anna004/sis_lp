@@ -471,7 +471,7 @@ footer {
 
 .close-btn {
   position: absolute;
-  left: calc((500px / 2) * 1.9);
+  left: calc(50% + 170px);
   top: 50px;
   padding: 10px 20px;
   font-size: 11px;
@@ -482,4 +482,12 @@ footer {
 .close-btn:hover {
   background-color: #fff;
   color: rgb(0,0,0,.9);
+}
+@media screen and (max-width: 768px) {
+  .pop {
+    width: calc(100% - 45px);
+  }
+  .close-btn {
+    left: calc(100% - 100px);
+  }
 }
