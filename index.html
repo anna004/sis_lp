@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="wrap">
-      <header class="header">
+      <!-- <header class="header">
         <div class="header_sp">
           <div class="header_hamburger">
             <span></span>
@@ -20,7 +20,7 @@
         </div>
         <div class="header_pc">
           <div class="logo">
-            <!-- <img src="./assets/images/logo.png" alt="ロゴ" /> -->
+            <img src="./assets/images/logo.png" alt="ロゴ" />
           </div>
           <nav>
             <ul class="nav_list">
@@ -31,7 +31,7 @@
             </ul>
           </nav>
         </div>
-      </header>
+      </header> -->
 
       <div class="hero">
         <video controls loop autoplay muted width=100%>
@@ -47,7 +47,7 @@
           <div class="contents_lead">
             <h2 class="contents_title">＃So i Sourceとは</h2>
             <p class="contents_desc">
-              プログラミングを基礎から学習できる、オンラインカリキュラムです！
+              プログラミングを基礎から学習できる、<br class="sp-only">オンラインカリキュラムです！
             </p>
           </div>
           <div class="contents_body">
@@ -57,11 +57,11 @@
                   <img src="./assets/images/about-01.jpg" alt="未経験エンジニアのキャリア育成" />
                 </div>
                 <div class="blog_list_body">
-                  <p class="blog_list_title">
+                  <p class="c-listTTl">
                   未経験エンジニアのキャリア育成
                   </p>
                   <p class="blog_list_text">
-                    IT業界未経験者をWEBエンジニア、デザイナーとして自社で育成するカリキュラム／教育体制が整っており、0からのスタートを応援します。
+                    IT業界未経験者をWEBエンジニア、デザイナーとして<br>自社で育成するカリキュラム／教育体制が整っており、<br class="sp-only">0からのスタートを応援します。
                   </p>
                 </div>
               </li>
@@ -70,13 +70,12 @@
                   <img src="./assets/images/about-02.jpg" alt="キャリアコンサルティング" />
                 </div>
                 <div class="blog_list_body">
-                  <p class="blog_list_title">
+                  <p class="c-listTTl">
                     キャリアコンサルティング
                   </p>
                   <p class="blog_list_text">
-                    「やりたい」事を実現できるレベルにまで引き上げていきます。<br>
-                    「So i Source選んでよかった」を目指します。<br>
-                    すでにエンジニア経験のある方はもちろん、未経験の皆さんも安心してキャリアアップできる環境に注力し、皆さんの成長、キャリアアップを全力でサポートします。
+                    「やりたい」事を実現できるレベルにまで引き上げていきます。<br class="pc-only">「So i Source選んでよかった」を目指します。<br>
+                    すでにエンジニア経験のある方はもちろん、<br>未経験の皆さんも安心して<br class="sp-only">キャリアアップできる環境に注力し、<br>皆さんの成長、キャリアアップを全力でサポートします。
                   </p>
                 </div>
               </li>
@@ -85,11 +84,11 @@
                   <img src="./assets/images/about-03.jpg" alt="「そう、私がソース」" />
                 </div>
                 <div class="blog_list_body">
-                  <p class="blog_list_title">
+                  <p class="c-listTTl">
                     「そう、私がソース」
                   </p>
                   <p class="blog_list_text">
-                    自分でソースを書けるようになってほしい、私のソースだ、私がソースだ！と言えるようになってほしいという感じの意味。<br>
+                    自分でソースを書けるようになってほしい、<br class="sp-only">私のソースだ、私がソースだ！<br>と言えるようになってほしいという感じの意味。<br>
                   ＋醤油みたいに万能なプログラミングカリキュラムです。
                   </p>
                 </div>
@@ -101,7 +100,7 @@
           <div class="contents_lead">
             <h2 class="contents_title">＃CURRICULUMについて</h2>
             <p class="contents_desc">
-              4つのコースを用意しております。ご自身にあったコースをお選びください！
+              4つのコースを用意しております。<br class="sp-only">ご自身にあったコースをお選びください！
             </p>
           </div>
           <div class="contents_body">
@@ -111,7 +110,7 @@
                   <img src="./assets/images/cu-01.jpg" alt="HTML, CSS, Javascript" />
                 </div>
                 <div class="blog_list_body">
-                  <p class="blog_list_title">
+                  <p class="c-listTTl">
                     HTML, CSS, Javascript
                   </p>
                   <p class="blog_list_text">
@@ -120,7 +119,46 @@
                     基礎〜応用までしっかり学習したのち、ポートフォリオ制作を行います。
                   </p>
                   <div class="blog_list_more">
-                    <a href="" class="button_more">MORE</a>
+                    <button id="btn-pop01" class="button_more">MORE</button>
+                  </div>
+                </div>
+                <div id="pop01" class="pop-wrap">
+                  <button class="close-btn" id="close01">CLOSE</button>
+                  <div class="pop">
+                    <h3>カリキュラム目次</h3>
+                    <ol>
+                      <li>HTML、CSS
+                          <ol>
+                              <li>始める前の準備</li>
+                              <li>div-puzzle-pc</li>
+                              <li>div-puzzle-sp</li>
+                              <li>pc-site</li>
+                              <li>responsive-site</li>
+                          </ol>
+                      </li>
+                      <li>JavaScript
+                          <ol>
+                              <li> JavaScriptカリキュラム概要</li>
+                              <li>カリキュラムページ一覧</li>
+                          </ol>
+                      </li>
+                      <li>wepack,ejs,Sass
+                          <ol>
+                              <li>wepack、ejs、SASSについて</li>
+                              <li>始める前の準備①（Node.js）</li>
+                              <li>始める前の準備②（環境構築）</li>
+                              <li>始める前の準備③（SCSS）</li>
+                              <li>kadai_PC</li>
+                              <li>kadai_SP</li>
+                          </ol>
+                      </li>
+                      <li>jQuery
+                          <ol>
+                              <li> jQueryとは</li>
+                              <li> jQueryカリキュラム概要</li>
+                          </ol>
+                      </li>
+                    </ol>
                   </div>
                 </div>
               </li>
@@ -129,7 +167,7 @@
                   <img src="./assets/images/cu-02.jpg" alt="Vue.js" />
                 </div>
                 <div class="blog_list_body">
-                  <p class="blog_list_title">
+                  <p class="c-listTTl">
                     Vue.js
                   </p>
                   <p class="blog_list_text">
@@ -137,7 +175,44 @@
                     Webアプリケーションの開発に興味がある方にはマストのコースと言っても過言ではないでしょう。<br>
                   </p>
                   <div class="blog_list_more">
-                    <a href="" class="button_more">MORE</a>
+                    <button id="btn-pop02" class="button_more">MORE</button>
+                  </div>
+                </div>
+                <div id="pop02" class="pop-wrap">
+                  <button class="close-btn" id="close02">CLOSE</button>
+                  <div class="pop">
+                    <h3>カリキュラム目次</h3>
+                    <ol>
+                      <li>Vue.jsとは
+                        <ol>
+                            <li>Webフロントエンドの変遷</li>
+                            <li>Vue.jsの特徴</li>
+                        </ol>
+                      </li>
+                      <li>Vue.jsの基本
+                          <ol>
+                              <li>インストールとHello World!</li>
+                              <li>Vueインスタンスの作成</li>
+                              <li>dataとテンプレート構文</li>
+                              <li>メソッドとイベントハンドリング</li>
+                              <li>算出プロパティとウォッチャ</li>
+                              <li>フィルタ</li>
+                              <li>フォーム入力バインディング</li>
+                              <li>条件付きレンダリング</li>
+                              <li>リストレンダリング</li>
+                              <li>クラスとスタイルのバインディング</li>
+                              <li>ライフサイクルフック</li>
+                          </ol>
+                      </li>
+                      <li>コンポーネントの基本
+                          <ol>
+                              <li>コンポーネントの作成</li>
+                              <li>親から子コンポーネントへのデータ受け渡し</li>
+                              <li>子から親コンポーネントへのイベント放出</li>
+                              <li>スロット</li>
+                          </ol>
+                      </li>
+                    </ol>
                   </div>
                 </div>
               </li>
@@ -146,7 +221,7 @@
                   <img src="./assets/images/cu-03.jpg" alt="Web Design" />
                 </div>
                 <div class="blog_list_body">
-                  <p class="blog_list_title">
+                  <p class="c-listTTl">
                     Web Design
                   </p>
                   <p class="blog_list_text">
@@ -155,7 +230,138 @@
                     カリキュラム中には多数課題があり、より実践的な学習が可能。<br>ポートフォリオ制作では実際に0からデザインを行います。
                   </p>
                   <div class="blog_list_more">
-                    <a href="" class="button_more">MORE</a>
+                    <button id="btn-pop03" class="button_more">MORE</button>
+                  </div>
+                </div>
+                <div id="pop03" class="pop-wrap">
+                  <button class="close-btn" id="close03">CLOSE</button>
+                  <div class="pop">
+                    <h3>カリキュラム目次</h3>
+                    <ol>
+                      <li>デザインとは
+                        <ol>
+                            <li>UIとUXの密接なかかわり</li>
+                            <li>デザインとは何か</li>
+                            <li>デザインの必要性</li>
+                            <li>Webデザイン・グラフィックデザインの違い</li>
+                        </ol>
+                      </li>
+                      <li>インターフェースデザインについて
+                          <ol>
+                              <li>デバイスにより異なる最適なUI</li>
+                              <li>インターフェースデザインとインタラクションデザイン</li>
+                          </ol>
+                      </li>
+                      <li>人間の認知特性とデザイン
+                          <ol>
+                              <li>色を瞬時に見分ける力</li>
+                              <li>形を瞬時に見分ける力</li>
+                              <li>動きや変化を見つける力</li>
+                          </ol>
+                      </li>
+                      <li>配色に関して
+                          <ol>
+                              <li>色のもつイメージ</li>
+                              <li>基本的な配色パターン</li>
+                              <li>ターゲットに合わせた配色をする</li>
+                          </ol>
+                      </li>
+                      <li>タイポグラフィ・フォントに関して
+                          <ol>
+                              <li>タイポグラフィとは</li>
+                              <li>基本的なフォント</li>
+                              <li>フォントの選び方</li>
+                              <li>文字組みの基本的なテクニック</li>
+                              <li>文字のレイアウト</li>
+                          </ol>
+                      </li>
+                      <li>デザインの基本原則
+                          <ol>
+                              <li> 整列</li>
+                              <li>区分</li>
+                              <li>近接</li>
+                              <li>反復</li>
+                              <li>コントラスト</li>
+                              <li>偏重</li>
+                          </ol>
+                      </li>
+                      <li>Illustratorの使い方
+                          <ol>
+                              <li>Illustratorの特徴</li>
+                              <li>ベクター画像とビットマップ画像</li>
+                              <li>Illustratorの基本操作</li>
+                          </ol>
+                      </li>
+                      <li>Photoshopの使い方
+                          <ol>
+                              <li>Photoshopの特徴</li>
+                              <li>Photoshopの基本操作</li>
+                          </ol>
+                      </li>
+                      <li>Adobe XDの使い方
+                          <ol>
+                              <li>XDの特徴</li>
+                              <li>XDの基本操作</li>
+                          </ol>
+                      </li>
+                      <li>Figmaの使い方
+                          <ol>
+                              <li>Figmaの特徴</li>
+                              <li>ダウンロード〜簡単な要素作成</li>
+                              <li>コンポーネント</li>
+                              <li>プロトタイプ制作</li>
+                              <li>デザインの共有</li>
+                          </ol>
+                      </li>
+                      <li>デザイン実務に入る前に
+                          <ol>
+                              <li>Webサイト制作の主なフロー</li>
+                              <li>ヒアリングでクライアントを知る</li>
+                              <li>コンセプトはデザインの道しるべ</li>
+                              <li>競合との向き合い方</li>
+                          </ol>
+                      </li>
+                      <li>ロゴ制作実践
+                          <ol>
+                              <li>ロゴの基本知識</li>
+                              <li>ロゴ制作のポイント</li>
+                              <li>トレース課題</li>
+                              <li>実践課題</li>
+                          </ol>
+                      </li>
+                      <li>バナー制作実践
+                          <ol>
+                              <li>バナーの基本知識</li>
+                              <li>バナー制作のポイント</li>
+                              <li>トレース課題</li>
+                              <li>実践課題</li>
+                          </ol>
+                      </li>
+                      <li>メインビジュアル制作実践
+                          <ol>
+                              <li>メインビジュアルの基本知識</li>
+                              <li>メインビジュアル制作のポイント</li>
+                              <li>トレース課題</li>
+                              <li>実践課題</li>
+                          </ol>
+                      </li>
+                      <li>ワイヤーフレーム制作実践
+                          <ol>
+                              <li>ワイヤーフレームの基本知識</li>
+                              <li>ワイヤーフレーム制作のポイント</li>
+                              <li>トレース課題</li>
+                              <li>実践課題</li>
+                          </ol>
+                      </li>
+                      <li>デザインカンプ制作実践
+                          <ol>
+                              <li>デザインカンプ制作のポイント</li>
+                              <li>アニメーションデザイン</li>
+                              <li>トレース課題</li>
+                              <li>実践課題</li>
+                          </ol>
+                      </li>
+                    </ol>
                   </div>
                 </div>
               </li>
@@ -164,7 +370,7 @@
                   <img src="./assets/images/cu-04.jpg" alt="PHP" />
                 </div>
                 <div class="blog_list_body">
-                  <p class="blog_list_title">
+                  <p class="c-listTTl">
                     PHP
                   </p>
                   <p class="blog_list_text">
@@ -172,7 +378,37 @@
                     カリキュラム内容：PHP基礎、Laravelを使ったWebアプリケーションの作成<br>
                   </p>
                   <div class="blog_list_more">
-                    <a href="" class="button_more">MORE</a>
+                    <button id="btn-pop04" class="button_more">MORE</button>
+                  </div>
+                </div>
+                <div id="pop04" class="pop-wrap">
+                  <button class="close-btn" id="close04">CLOSE</button>
+                  <div class="pop">
+                    <h3>カリキュラム目次</h3>
+                    <ol>
+                      <li>前編
+                        <ol>
+                            <li>PHPの基礎</li>
+                            <li>変数の使い方</li>
+                            <li>条件分岐</li>
+                            <li>配列、連想配列、多次元配列の操作</li>
+                            <li>繰り返し処理</li>
+                            <li>関数を使ってみよう</li>
+                            <li>GETとPOST</li>
+                            <li>データベース</li>
+                            <li>オブジェクト指向の基礎を学ぼう</li>
+                        </ol>
+                      </li>
+                      <li>後編
+                          <ol>
+                              <li>Laravelとは</li>
+                              <li>Laravel学習</li>
+                              <li>Laravel課題1</li>
+                              <li>Laravel課題2</li>
+                              <li>課題アプリの仕様</li>
+                          </ol>
+                      </li>
+                    </ol>
                   </div>
                 </div>
               </li>
@@ -183,65 +419,65 @@
           <div class="contents_lead">
             <h2 class="contents_title">＃ABOUT US</h2>
             <p class="contents_desc">
-              So i Sourceはなぜ安いのか、なぜ良いのか、
-              So i Sourceを広めている私たちが何者なのか、なぜやるのか。
+              So i Sourceはなぜ安いのか、なぜ良いのか、<br>
+              So i Sourceを広めている私たちが何者なのか、<br class="sp-only">なぜやるのか。
             </p>
           </div>
           <div class="contents_body">
             <ul class="work_list">
               <li>
                 <div class="work_list_icon">
-                  <img src="./assets/images/company.png" alt="" />
+                  <img src="./assets/images/icon-company.png" alt="CONVICTION" />
                 </div>
-                <p class="work_list_title">CONVICTION</p>
+                <p class="c-listTTl">CONVICTION</p>
                 <p class="work_list_text">
-                  株式会社CONVICTIONと申します。<br>社長の想いは「いつまでも続く暖かい場所を作りたい」
+                  株式会社CONVICTIONと申します。<br>社長の想いは<br class="sp-only">「いつまでも続く暖かい場所を作りたい」
                 </p>
               </li>
               <li>
                 <div class="work_list_icon">
-                  <img src="./assets/images/code.png" alt="SES" />
+                  <img src="./assets/images/icon-ses.png" alt="SES" />
                 </div>
-                <p class="work_list_title">SES</p>
+                <p class="c-listTTl">SES</p>
                 <p class="work_list_text">
-                  SES事業として、お客様の求めるニーズに合わせて、当社のエンジニアが企業内に常駐し、お客様のプロジェクト業務をサポートしています。現場経験豊富！
+                  SES事業として、お客様の求めるニーズに合わせて、<br class="sp-only">当社のエンジニアが企業内に常駐し、<br class="sp-only">お客様のプロジェクト業務をサポートしています。<br class="sp-only">現場経験豊富！
                 </p>
               </li>
               <li>
                 <div class="work_list_icon">
-                  <img src="./assets/images/worthy.png" alt="Worthy" />
+                  <img src="./assets/images/icon-worthy.png" alt="Worthy" />
                 </div>
-                <p class="work_list_title">Worthy</p>
+                <p class="c-listTTl">Worthy</p>
                 <p class="work_list_text">
-                  弊社で知識0からエンジニアになった私たちだから作れたもの！<br>本当に必要なことだけが圧縮されています！
+                  弊社で知識0からエンジニアになった、<br class="sp-only">私たちだから作れたもの！<br>本当に必要なことだけが圧縮されています！
                 </p>
               </li>
               <li>
                 <div class="work_list_icon">
-                  <img src="./assets/images/ad.png" alt="Inexpensive" />
+                  <img src="./assets/images/icon-ad.png" alt="Inexpensive" />
                 </div>
-                <p class="work_list_title">Inexpensive</p>
+                <p class="c-listTTl">Inexpensive</p>
                 <p class="work_list_text">
                  広告費用がかかっていません！<br>経費がかかっていないので安い！
                 </p>
               </li>
               <li>
                 <div class="work_list_icon">
-                  <img src="./assets/images/review.png" alt="Reviewing" />
+                  <img src="./assets/images/icon-review.png" alt="Reviewing" />
                 </div>
-                <p class="work_list_title">Reviewing</p>
+                <p class="c-listTTl">Reviewing</p>
                 <p class="work_list_text">
-                 カリキュラムの添削は現役エンジニアが担当します！<br>カリキュラム受講中から現場の経験を積み重ねよう！
+                 カリキュラムの添削は<br>現役エンジニアが担当します！<br>カリキュラム受講中から<br>現場の経験を積み重ねましょう！
                 </p>
               </li>
               <li>
                 <div class="work_list_icon">
-                  <img src="./assets/images/team.png" alt="Open place for Growth member" />
+                  <img src="./assets/images/icon-team.png" alt="Open place for Growth member" />
                 </div>
-                <p class="work_list_title">Open place for Growth members</p>
+                <p class="c-listTTl">Open place for Growth members</p>
                 <p class="work_list_text">
                   「皆で作っていきたい！」<br>
-                  弊社の理念「であり、当サービスの根底でもあります！皆さんと一緒に良い場所にできたらいいなと思います！
+                  弊社の理念であり、<br class="sp-only">当サービスの根底でもあります！<br class="sp-only">皆さんと一緒に<br class="sp-only">良い場所にできたらいいなと思います！
                 </p>
               </li>
             </ul>
@@ -252,10 +488,14 @@
           <div class="contents_lead">
             <h2 class="contents_title">＃CONTACT</h2>
             <p class="contents_desc">
-             少しでも気になる！お話だけでも！という方は下記の公式LINEからお気軽にご連絡ください！<br>
-             もし面談をご希望の際は、Wantedlyのチャットからお気軽にお申し付けください！
+             少しでも気になる！お話だけでも！という方は<br class="sp-only">下記の公式LINEからお気軽にご連絡ください！<br>
+             もし面談をご希望の際は、<br class="sp-only">Wantedlyのチャットから<br class="sp-only">お気軽にお申し付けください！
             </p>
           </div>
+          <!-- <div class="contact_icon">
+            <img src="./assets/images/contact-01.png" alt="online面談">
+            <img src="./assets/images/contact-02.png" alt="LINE追加">
+          </div> -->
           <div class="contents_body">
             <a href="https://lin.ee/w2A1j5L" class="contact_link"><img src="./assets/images/qr.png" alt="QRコード"></a>
           </div>
@@ -263,14 +503,20 @@
       </main>
     </div>
     <section style="display: none;">
-      <a target="_blank" href="https://icons8.com/icon/eIM3rBvyFbHA/three-quarter-view-of-a-little-yellow-home-icon">Three-quarter view of a little yellow home icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      <a target="_blank" href="https://icons8.com/icon/bfPp9AgCjG84/three-quarter-view-of-a-red-favorites-icon">Three-quarter view of a red favorites icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      <a target="_blank" href="https://icons8.com/icon/7xqkdDZOH9Hv/three-quarter-view-of-a-bitcoin-emblem">Three-quarter view of a bitcoin emblem</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      <a target="_blank" href="https://icons8.com/icon/MBDwafr8VRkV/three-quarter-view-of-a-light-blue-and-purple-wrench">Three-quarter view of a light blue and purple wrench</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      <a target="_blank" href="https://icons8.com/icon/48dI0ObpjEZW/three-quarter-view-of-a-green-blue-pencil">Three-quarter view of a green blue pencil</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      <a target="_blank" href="https://icons8.com/icon/Q1VdxfcZu0xH/three-quarter-side-view-of-a-blue-connect-symbol">Three-quarter side view of a blue connect symbol</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+      <a target="_blank" href="https://icons8.com/icon/g7VlzMLWjcXN/組織">組織</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      <a target="_blank" href="https://icons8.com/icon/HRvsIkoWsZ2Z/手を使って苗植え">手を使って苗植え</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      <a target="_blank" href="https://icons8.com/icon/zJgUuVbapUhN/握手">握手</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      <a target="_blank" href="https://icons8.com/icon/ydnBAst51Bo9/賞">賞</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      <a target="_blank" href="https://icons8.com/icon/6lGaSiyRe9C0/卒業証書-2">卒業証書 2</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      <a target="_blank" href="https://icons8.com/icon/eD670pQZg4Fs/勝者">勝者</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      <a target="_blank" href="https://icons8.com/icon/bMdaH58mb5ZK/利益">利益</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      <a target="_blank" href="https://icons8.com/icon/Q0WJuWkNjNuh/音声プレゼンテーション">音声プレゼンテーション</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      <a target="_blank" href="https://icons8.com/icon/f5UopmvnRWXT/タッチスクリーンのスマートフォン">タッチスクリーンのスマートフォン</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     </section>
+    <footer>
+      Copyright	&copy; 2022 CONVICTION All Rights Reserved.
+    </footer>
+    <script type="text/javascript" src="./assets/app.js"></script>
   </body>
 </html>
 
