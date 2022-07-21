@@ -20,6 +20,9 @@ button {
   font-size: 18px;
   font-weight: bold;
 }
+.c-fontRed {
+  color: #ff4555;
+}
 .sp-only { display: block!important; }
 .pc-only { display: none!important; }
 @media  (min-width: 768px) {
