@@ -39,6 +39,15 @@ button {
 
 .hero {
   position: relative;
+  height: 100vh;
+}
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  object-fit: cover;
 }
 
 .hero_title {
@@ -191,7 +200,7 @@ button {
   .contents_desc {
     margin-top: 15px;
     line-height: 1.4;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   /* .contents_body {
