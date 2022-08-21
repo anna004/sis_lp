@@ -400,10 +400,11 @@ footer p {
   width: fit-content;
   margin: 100px auto;
   padding: 20px;
-  background-color: #cd7152;
+  background-color: #ff4555;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-radius: 3px;
 }
 #legal .contact a {
   color: #fff;
@@ -476,7 +477,7 @@ footer p {
     font-size: 15px;
   }
   #legal .contact a {
-    line-height: 1.4;
+    line-height: 1.3;
   }
 }
 
