@@ -29,11 +29,11 @@ button {
   .pc-only { display: none!important; }
   .sp-only { display: block!important; }
 }
-.sp { display: table !important; }
-.pc { display: none!important; }
+.pc-table { display: table !important; }
+.sp-table { display: none!important; }
 @media screen and (max-width: 768px) {
-  .sp { display: none!important; }
-  .pc { display: table !important; }
+  .pc-table { display: none!important; }
+  .sp-table { display: table !important; }
 }
 
 .inner960 {
