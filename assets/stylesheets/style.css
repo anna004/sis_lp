@@ -712,6 +712,7 @@ td:last-child {
     margin: 30px 10px;
   }
   td {
+    min-width: 50px;
     padding: 20px 10px;
   }
   td:last-child {
