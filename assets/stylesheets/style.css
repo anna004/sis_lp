@@ -196,7 +196,7 @@ footer ul li:hover {
   }
 
   .list_body {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .list_more {
     margin-top: 30px;
@@ -683,21 +683,12 @@ td:last-child {
     text-align: left;
   }
   .list_text {
-    margin-top: 20px;
+    margin-top: 10px;
     line-height: 1.5;
     font-size: 14px;
   }
   .list_more {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 30px;
-    padding: 15px 20px;
-  }
-  .list > li:nth-child(even) .list_more {
-    margin-left: auto;
+    margin-top: 20px;
   }
   .accordion-area {
     width: 100%;
@@ -708,8 +699,9 @@ td:last-child {
     text-align: left;
   }
   table {
+    width: 100%;
     font-size: 14px;
-    margin: 30px 10px;
+    margin: 15px auto 0;
   }
   td {
     min-width: 50px;
